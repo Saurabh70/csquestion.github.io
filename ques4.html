@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Volunteer Sign up form</title>
+    <style>
+      html, body {
+      min-height: 100%;
+      }
+      body, div, form, input, select, textarea, label, p { 
+      padding: 0;
+      margin: 0;
+      outline: none;
+      font-family: Roboto, Arial, sans-serif;
+      font-size: 14px;
+      color: #666;
+      line-height: 22px;
+      }
+      h1 {
+      position: absolute;
+      margin: 0;
+      font-size: 40px;
+      color: #fff;
+      }
+      textarea {
+      width: calc(100% - 12px);
+      padding: 5px;
+      }
+      .testbox {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: inherit;
+      padding: 20px;
+      }
+      form {
+      width: 100%;
+      padding: 20px;
+      border-radius: 6px;
+      background: #fff;
+      box-shadow: 0 0 8px  #669999; 
+      }
+      .banner {
+      position: relative;
+      height: 300px;
+      background-color: pink;  
+      background-size: cover;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      }
+      input, select, textarea {
+      margin-bottom: 10px;
+      border: 1px solid #ccc;
+      border-radius: 3px;
+      }
+      input {
+      width: calc(100% - 10px);
+      padding: 5px;
+      }
+      input[type="date"] {
+      padding: 4px 5px;
+      }
+      textarea {
+      width: calc(100% - 12px);
+      padding: 5px;
+      }
+      .btn-block {
+      margin-top: 10px;
+      text-align: center;
+      }
+      button {
+      width: 150px;
+      padding: 10px;
+      border: none;
+      border-radius: 5px; 
+      background:  #669999;
+      font-size: 16px;
+      color: #fff;
+      cursor: pointer;
+      }
+      button:hover {
+      background:  #a3c2c2;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="testbox">
+      <form action="/">
+        <div class="banner">
+          <h1>Registration</h1>
+        </div>
+        <br/>
+        <p>Fil our form.</p>
+        <p><strong><a href="ques8.html">BACK TO HOME</strong></a></p>
+        <br/>
+        <div class="colums">
+          <div class="item">
+            <label for="name">Name<span>*</span></label>
+            <input id="name" type="text" name="name"/>
+          </div>
+          <div class="item">
+            <label for="eaddress">Email<span>*</span></label>
+            <input id="eaddress" type="text"   name="eaddress" />
+          </div>
+        </div>
+        <div>
+          <label>Education :</label>
+          <div>
+            <div>
+              <center>
+              <input type="radio" value="none" id="radio_1" name="info"/>
+              <label for="radio_1" class="radio"><span>Undergradute</span></label>
+              </center>
+            </div>
+            <div>
+              <center>
+              <input  type="radio" value="none" id="radio_2" name="info"/>
+              <label for="radio_2" class="radio"><span>Post Graduate</span></label>
+              </center>
+            </div>
+          </div>
+        </div>
+        <div>
+          <p>City:</p>
+          <select>
+            <option selected value="" disabled selected></option>
+            <option value="b" >New Delhi</option>
+            <option value="ch">Mumbai</option>
+            <option value="v">Allahabad</option>
+            <option value="n">Lucknow</option>
+          </select>
+        </div>
+        <div>
+          <label for="visit">About Your Family: </label>
+          <textarea id="visit" rows="3"></textarea>
+        </div>
+        <div class="btn-block">
+          <button type="submit" href="/">Register</button>
+        </div>
+      </form>
+    </div>
+  </body>
+</html>
